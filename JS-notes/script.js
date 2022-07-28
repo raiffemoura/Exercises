@@ -6,3 +6,4 @@ var cars = ["jetta", "fusion", "corolla", "civic"]
 console.log(cars.length)
 
 console.log(countP)
+
