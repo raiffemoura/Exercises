@@ -1,0 +1,16 @@
+p{
+    color: brown;
+}
+li{
+    color: red;
+    background-color: rgb(233, 233, 233);
+}
+body{
+    background-color: rgb(202, 200, 200);
+}
+#agentes{
+    height: 500px;
+    width: 50vw;
+    background-color: aqua;    
+
+}
