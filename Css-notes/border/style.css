@@ -1,0 +1,25 @@
+/* border, circle, short-hand */
+#primeira{
+    height: 100px;
+    /* background-color: blue; */
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 40px 20px;
+
+}
+#segunda{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(255, 0,0);
+    border-style: dashed;
+    border-radius: 50%;
+}
+#terceira{
+    height: 100px;
+    background-color: #00ff00;    
+}
+p{
+    border: 3px solid blue;
+    border-radius: 5px;
+}
