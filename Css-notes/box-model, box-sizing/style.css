@@ -7,7 +7,7 @@ body{
 #primeira{
     width: 100px;
     height: 100px;
-    background-color: blue;
+    background-color: blue; 
     padding: 10px;
     border: 10px solid black;
     /* padding e border aumentam o size do quadrado, box sizing resolve isso */
