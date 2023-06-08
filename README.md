@@ -1,2 +1,2 @@
 # Exercises
- My HTML5, CSS3 and JavaScript exercises.
+ My HTML5, CSS3 and JavaScript exercises and notes.
