@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Relative</title>
+    <style>
+        .quadro {
+            width: 500px;
+            height: 400px;
+            border: 1px solid gray;
+        }
+
+        .quadrado {
+            width: 100px;
+            height: 100px;
+            /* display: inline-block; */
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .blue {
+            background-color: blue;
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
+
+        .green {
+            background-color: green;
+        }
+        .black {
+            background-color: black;
+            position: relative;
+            left: 400px;
+            top: 200px;
+        }
+        .orange {
+            background-color: orange;
+        }
+        .gray {
+            background-color: gray;
+        }
+        
+        a{
+            text-decoration: none;
+            background-color: white;
+            color: blueviolet;
+            border: 1px solid blueviolet;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 30px;
+            padding: 5px 15px;
+            margin-right: 5px;
+            
+        }
+        a:hover{
+            background-color: blueviolet;
+            color: white;
+            border: 1px solid white;
+        }
+        p{
+            font-size: 25px;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Position Relative</h1>
+    <div class="quadro">
+        <div class="quadrado red"></div>
+        <div class="quadrado blue"></div>
+        <div class="quadrado green"></div>
+    </div>
+    <div class="quadro">
+        <div class="quadrado gray"></div>
+        <div class="quadrado black"></div>
+        <div class="quadrado orange"></div>
+    </div>
+    <p>Não altera a posição dos outros elementos na pagina. <br>
+        Posição relativa ao sua posição natural. <br>
+        Muito fragil em relação ao elemento pai.
+    </p>
+
+    <a href="./absolute.html">Absolute</a>
+    <a href="./fixed.html">Fixed</a>
+    <a href="./sticky.html">Sticky</a>
+</body>
+
+</html>
