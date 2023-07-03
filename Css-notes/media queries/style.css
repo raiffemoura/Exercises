@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    color: white;
+    background-color: #5c57a4;
+    padding: 15px;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    font-size: 18px;
+}
+.logo{
+    display: inline;
+    float: left;
+
+}
+.menu{
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+   
+}
+li{
+    margin-left: 15px;
+    float: left;
+    
+}
+
+@media screen and (max-width: 700px) {
+    
+
+   header{
+    background: gray;}
+}
+
+@media screen and (max-width: 500px) {
+    
+    header{
+        background: purple;
+    }
+
+    .logo{
+        text-align: center;
+        float: none;
+        display: block;
+         
+    }
+    .menu{
+        margin-top: 20px;
+        float: none;
+        text-align:center;
+    }
+    li{
+        float: none;
+        margin-top: 5px;
+        padding: 10px;
+    }
+}
