@@ -20,7 +20,7 @@
     <h1>Iniciando os estudos em DOM</h1>
     <p>Aqui vai o resultado.</p>
     <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
-    <div id="msg">Clique em mim.</div>
+    <div id="msg" onclick="clicar()">Clique em mim.</div>
     
     
     
@@ -30,13 +30,15 @@
         window.document.write('Esta escrito assim: ' + p1.innerText)
         p1.style.color = "blue"
 
-        /*var b = window.document.getElementById("msg")
+        function clicar(){
+        var b = window.document.getElementById("msg")
         b.style.backgroundColor = "brown"
-        b.innerText = "Estou aguardando..."
-        */
+        b.style.display = "inline-block"
+        b.innerText = "Você clicou!"
+    }
 
         var d = window.document.querySelector("div#msg")
-        d.style.color = "black"
+        d.style.color = "black "
         
 
 
