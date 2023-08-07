@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    color: #ffffff;
+    font-family: arial;
+    cursor: default;
+}
+a{
+    cursor: default;
+}
+
+.container {
+    background: #001616;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.box {
+
+    background-color:  black;
+    border: 2px solid teal;
+    border-radius: 15px;
+    width: 500px;
+    height: 400px;
+    transition: 50ms linear;
+    position: relative;
+    
+}
+
+.box:hover{
+    transform: scale(1.03);
+    transition: 50ms linear;
+    box-shadow: 5px 5px 10px teal;
+    
+    
+}
+
+.content {
+    margin-top: 60px;
+}
+
+.contentDown{
+   
+    margin-top:30%;
+  
+
+}
+
+.contentDownRes{
+    margin-top: 22%;
+}
+
+.btn {
+    border: 2px solid teal;
+    margin: 20px;
+    border-radius: 15px;
+    font-size: 25px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    transition: 50ms linear;
+    
+}
+.btn:hover{
+    transform: scale(1.1);
+    transition: 50ms linear;
+    background-color: #003232;
+    color: white;
+    
+}
+
+
+.btn:active{
+    transform: scale(1);
+    transition: 10ms linear;
+    background-color: #002222;
+}
+
+
+
+.btnDown{
+    
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+.data{
+    margin-top: 50px;
+    
+}
+
+.btnSortear{
+    margin: 5px;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+#res{
+    background-color: #001616;
+    border: 2px solid teal;
+    color: white;
+    padding: 5px;
+    width: 80px;
+    font-size: 20px;
+}
+
+#ballWrap{
+ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#ball{
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 50%;
+    color: black;
+}
+
+#n{
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
