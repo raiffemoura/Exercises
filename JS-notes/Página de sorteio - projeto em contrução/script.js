@@ -1,7 +1,7 @@
 
 function numb(){
     number = document.querySelector("#res").value;
-    console.log(number)
+    
 }
 
 function resul() {
