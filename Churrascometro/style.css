@@ -1,0 +1,115 @@
+body{
+    padding: 0;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(./assets/padrao-sem-emenda-para-churrasco-preto-fundo-de-churrasco-no-estilo-de-quadro-de-desenho-com-grelhados-bife-de-carne-espetinho-.avif);
+    
+    background-size: cover;
+}
+
+.container{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+
+
+}
+
+.box{
+    width: 500px;
+    height: 750px;
+    border-radius: 20px;
+    border: 1px rgb(255, 255, 255) solid;
+    background-color:rgb(00,00,00, 0.8) ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   margin-top: 100px;
+   
+}
+
+.churraslogo{
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 30px;
+    margin-top: 0;
+   
+}
+
+.inp{
+    width: 200px;
+    text-align: center;
+    height: 30px;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.705);
+    color: black;
+    transition: 30ms linear;
+    
+}
+
+input::placeholder{
+    color: black
+}
+
+.pbtn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.btn{
+    width: 120px;
+    height: 30px;
+    border-radius: 20px;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.705);
+    color: black;
+    transition: 30ms linear;
+
+}
+.btn:hover{
+    transform: scale(1.2);
+    transition: 30ms linear;
+    
+}
+.btn:active{
+    transform: scale(1.0);
+    
+
+}
+
+.res{
+    margin-top: 30px;
+    max-width: 400px;
+    text-align: center;
+}
+
+.box2{
+    width: 500px;
+    height: 100%;
+    margin-top: 50px;
+    border-radius: 20px;
+    border: 1px rgb(255, 255, 255) solid;
+    background-color:rgb(00,00,00, 0.0) ;
+    display:flex;
+    flex-direction: column; 
+    align-items: flex-end;
+    justify-content: center;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 13px;
+
+}
+

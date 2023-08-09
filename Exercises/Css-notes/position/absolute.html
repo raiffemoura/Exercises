@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Absolute</title>
+    <style>
+        .quadro1 {
+            width: 500px;
+            height: 400px;
+            border: 1px solid gray;
+            position: relative;
+        }
+        .quadro2 {
+            width: 700px;
+            height: 500px;
+            border: 1px solid gray;
+            position: relative;
+        }
+
+        .quadrado {
+            width: 100px;
+            height: 100px;
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .blue {
+            background-color: blue;
+            position: absolute;
+            right: 0px;
+            bottom: 0px;
+        }
+
+        .green {
+            background-color: green;
+        }
+        .black {
+            background-color: black;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        .orange {
+            background-color: orange;
+        }
+        .gray {
+            background-color: gray;
+        }
+        
+        a{
+            text-decoration: none;
+            background-color: white;
+            color: blueviolet;
+            border: 1px solid blueviolet;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 30px;
+            padding: 5px 15px;
+            margin-right: 5px;
+            
+        }
+        a:hover{
+            background-color: blueviolet;
+            color: white;
+            border: 1px solid white;
+        }
+        p{
+            font-size: 25px;
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Position Absolute</h1>
+    <div class="quadro1">
+        <div class="quadrado red"></div>
+        <div class="quadrado blue"></div>
+        <div class="quadrado green"></div>
+    </div>
+    <div class="quadro2">
+        <div class="quadrado gray"></div>
+        <div class="quadrado black"></div>
+        <div class="quadrado orange"></div>
+    </div>
+    <p>
+        Posição inicial dele não afeta os outros elementos. E como se não estivesse lá. <br>
+        Posição não é relativa a posição inicial.
+        O posicionamento absoluto ele é relativo ao pai, desde que o pai não tenha uma posição estatica.
+    </p>
+
+    <a href="./index.html">Relative</a>
+    <a href="./fixed.html">Fixed</a>
+    <a href="./sticky.html">Sticky</a>
+</body>
+
+</html>

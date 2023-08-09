@@ -1,0 +1,22 @@
+body{
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+#primeira{
+    width: 100px;
+    height: 100px;
+    background-color: blue; 
+    padding: 10px;
+    border: 10px solid black;
+    /* padding e border aumentam o size do quadrado, box sizing resolve isso */
+    box-sizing: border-box ;
+    /* margin aumenta pra fora do elemento */
+    margin: 10px;
+}
+#segunda{
+    width: 100px;
+    height: 100px;
+    background-color: #FF0000;
+}
