@@ -1,0 +1,7 @@
+Nesse desafio temos que criar um churrascometro para calcular o gasto necessario para um churrasco, estimandoo quanto de cada produto você irá precisar 
+comprar e dessa forma evitando possiveis gastos extras.
+Os dados usados para referencia foram: 
+Adulto - 400g de carne e sendo mais de 6 horas 650g de carne.
+Cerveja - 1,2L por ADULTO e sendo mais de 6 horas 2L por ADULTO. 
+Refrigerante e água - 1L por pessoa e sendo mais de 6 horas 1,5L.
+Crianças valem por metade do consumo de um adulto (Não entram no calculo da cerveja).
