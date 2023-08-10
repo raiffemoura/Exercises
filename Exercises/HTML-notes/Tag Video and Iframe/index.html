@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <div class="container">
+
+        <video id="video1" class="video" autoplay src="assets/videos/paisagem.mp4">
+
+        </video>
+        
+        <div class="controle" >
+
+            <img class="btn" onclick="retroceder()" src="./assets/imagens/back-15.png">
+            <img class="btn" onclick="avancar()" src="./assets/imagens/fowarding-15.png">
+            <img class="btn" onclick="diminuir_vel()" src="./assets/imagens/decrease.png">
+            <img class="btn" onclick="aumentar_vel()" src="./assets/imagens/increase.png">
+            <img class="btn" onclick="pause()" src="./assets/imagens/pause.png">
+            <img class="btn" onclick="play()" src="./assets/imagens/play.png">
+            <img class="btn" onclick="stop()" src="./assets/imagens/stop.png">
+        </div>
+    </div>
+    
+
+    <iframe src="https://www.tudogostoso.com.br" allowfullscreen=true></iframe>
+
+    <script src="script.js"></script>
+</body>
+</html>

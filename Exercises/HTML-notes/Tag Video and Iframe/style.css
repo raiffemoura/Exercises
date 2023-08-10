@@ -1,0 +1,37 @@
+.container{
+    position: relative;
+    width: 640px;
+    height: 360px;
+}
+
+video{
+    width: 100%;
+}
+
+.controle{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    
+    
+}
+
+.btn{
+    position: relative;
+    width: 60px;
+    padding: 10px ;
+    top: 100%;
+    transform: translateY(-100%);
+}
+
+.controle:hover{
+transition: 100ms linear;
+opacity: 1;
+}
+
+.controle:not(:hover){
+    opacity: 0;
+    transition: 800ms linear; 
+}
