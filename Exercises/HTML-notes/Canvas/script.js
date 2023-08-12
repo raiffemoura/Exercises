@@ -92,15 +92,15 @@ ctx3.arc(x, y, raio, inicio, fim);
 ctx3.stroke();
 
 ctx3.beginPath()
-x=340;
+x = 340;
 y = 120;
 raio = 100;
 inicio = 0;
 fim = 2 * Math.PI;
-ctx3.arc(x,y, raio, inicio, fim)
+ctx3.arc(x, y, raio, inicio, fim)
 ctx3.fillStyle = "blue";
 ctx3.fill();
-ctx3.lineWidth=2;
+ctx3.lineWidth = 2;
 ctx3.stroke();
 
 
@@ -111,3 +111,98 @@ ctx3.stroke();
 
 let tela4 = document.getElementById("tela4")
 let ctx4 = tela4.getContext("2d")
+
+
+let circle = {
+    x:120,
+    y:120,
+    raio:100,
+    inicio:0,
+    fim: 0,
+    antiHor: true,
+}
+
+
+
+
+function drawCircle(c) {
+    ctx4.beginPath();
+    ctx4.rect(0,0,500,500)
+    ctx4.fillStyle = "beige"
+    ctx4.fill()
+
+    ctx4.beginPath();
+    ctx4.strokeStyle = "red";
+    ctx4.lineWidth = 1;
+    ctx4.fillStyle = "blue";
+    ctx4.arc(c.x, c.y, c.raio, c.inicio, c.fim);
+
+    ctx4.fill();
+    ctx4.stroke();
+
+}
+
+
+setInterval (function(){
+
+    if(circle.fim < 2* Math.PI){
+        circle.fim += 0.012;
+        circle.x += 0.5;
+    }
+
+    drawCircle(circle);
+},0.5)
+
+
+
+// <---------------------------------------------------------------->
+// <---------------------------------------------------------------->
+
+
+let tela5 = document.getElementById("tela5")
+let ctx5 = tela5.getContext("2d")
+
+
+let circle2 = {
+    x:120,
+    y:120,
+    raio:100,
+    inicio:0,
+    fim: 0,
+    antiHor: true,
+}
+
+
+
+function drawCircle2(c) {
+    ctx5.beginPath();
+    ctx5.rect(0,0,500,500)
+    ctx5.fillStyle = "beige"
+    ctx5.fill()
+
+    ctx5.beginPath();
+    ctx5.strokeStyle = "red";
+    ctx5.lineWidth = 1;
+    ctx5.fillStyle = "blue";
+    ctx5.arc(c.x, c.y, c.raio, c.inicio, c.fim, c.antiHor);
+
+    ctx5.fill();
+    ctx5.stroke();
+
+}
+
+
+setInterval (function(){
+
+    if(circle2.fim <= 2* Math.PI){
+        circle2.fim += 0.012;
+        circle2.x += 0.5;
+    }
+
+    drawCircle2(circle2);
+},0.5)
+
+
+
+
+
