@@ -17,3 +17,14 @@
 #tela5{
     background-color: rgb(233, 187, 161);
 }
+
+#tela6{
+    background-color: bisque;
+
+    position: relative;
+    overflow: hidden;
+}
+
+#tela7{
+    background-color: rgb(206, 214, 243);
+}

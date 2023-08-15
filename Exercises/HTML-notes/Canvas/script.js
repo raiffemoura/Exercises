@@ -206,3 +206,31 @@ setInterval (function(){
 
 
 
+// <---------------------------------------------------------------->
+// <---------------------------------------------------------------->
+
+
+let tela6 = document.getElementById("tela6");
+let ctx6 = tela6.getContext("2d");
+
+let img = document.getElementById("cruz")
+
+
+ctx6.drawImage(img, 20, 20);
+
+
+// <---------------------------------------------------------------->
+// <---------------------------------------------------------------->
+
+
+let tela7 = document.getElementById("tela7");
+let ctx7 = tela7.getContext("2d");
+
+let img2 = new Image();
+img2.src = "./assets/goku.png"
+
+img2.onload = desenharImg2;
+
+function desenharImg2() {
+    ctx7.drawImage(this, 100 ,20, this.naturalWidth/2.2, this.naturalHeight/2.2 );
+}
