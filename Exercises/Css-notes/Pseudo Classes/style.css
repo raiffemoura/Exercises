@@ -1,0 +1,50 @@
+li{
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+input:focus{
+    color: red;
+}
+
+/* li:first-child{
+    color: blue;
+} */
+
+li:first-of-type{
+    color: blue;
+}
+
+li:nth-child(4){
+    font-weight: bold;
+}
+
+li:nth-of-type(4){
+    font-style: italic;
+
+}
+
+li:nth-last-child(2){
+    color: brown;
+    font-weight: bold;
+}
+
+li:last-child{
+    color: red;
+}
+
+li:nth-of-type(even){
+    background-color: beige;
+}
+
+li:nth-of-type(odd){
+    background-color: gray;
+    color: white;
+
+}

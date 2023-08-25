@@ -1,0 +1,21 @@
+p::first-line{
+
+    color: #0000ff 
+}
+
+li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+li::before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    
+    background-image: url(../../HTML-notes/Canvas/assets/cruz.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

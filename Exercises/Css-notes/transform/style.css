@@ -1,0 +1,12 @@
+#img1{
+    padding: 100px;
+    width: 420px;
+    /* transform: rotate(-25deg); */
+    /* transform: scale(2, 1) */
+    transform: skew(60deg, 20deg );
+}
+
+#transform{
+    padding-left : 100px;
+    width: 420px;
+}
