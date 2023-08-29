@@ -1,20 +1,115 @@
-.container{
+h1 {
+
+    margin: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.container {
     border: 1px solid red;
-    width: 1100px;
+    width: 80%;
+    height: 500px;
     border-radius: 10px;
     margin: auto;
     display: flex;
-
-   
+    /* flex-direction: column;
+    flex-wrap: wrap; */
+    flex-flow: row;
+    align-items: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif
 }
-.box{
+
+.box {
     border: 1px solid black;
     border-radius: 10px;
-   
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    align-items: center;
+
+
+
+
 }
 
-.bigbox{
+.bigBox {
+    width: 40%;
+    flex-basis: 50%;
+    height: 90%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(./images/bitcoin.jpg);
+    background-size: cover;
+    color: white;
+    font-size: 20px;
+
     
 
+}
+.bigBox:hover {
+    transform: scale(1.0254);
+    transition: 50ms linear;
+}
+.bigBox2 {
+    /* width: 100%; */
+    flex-basis: 50%;
+    height: 94%;
+    /* background-color: red; */
+
+
+}
+
+.smallBox {
+    width: 90%;
+    height: calc(50% - 6px);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.bg1 {
+    background-image: url(./images/bit2.jpg);
+    background-size: cover;
+    color: white;
+}
+.bg1:hover {
+    transform: scale(1.03);
+    transition: 50ms linear;
+}
+.container2 {
+    background-color: darkgray;
+    height: 500px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.r1 {
+    background-color: red;
+}
+
+.r2 {
+    background-color: blue;
+}
+
+.r3 {
+    background-color: green;
+}
+
+.rect {
+    width: 250px;
+    height: 250px;
 }
