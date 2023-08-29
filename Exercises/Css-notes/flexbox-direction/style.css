@@ -22,7 +22,8 @@ a {
     flex-flow: row;
     align-items: center;
     font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    /* align-content: space-between; */
 }
 
 .box {
@@ -90,15 +91,16 @@ a {
     height: 500px;
     color: white;
     display: flex;
-    flex-direction: row;
-    /* flex-wrap: wrap; */
-    justify-content: flex-start;
-    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* justify-content: flex-start; */
+    /* align-items: center;  */
 
 }
 
 .r1 {
     background-color: red;
+   
 }
 
 .r2 {
@@ -110,6 +112,79 @@ a {
 }
 
 .rect {
-    width: 250px;
+    /* width: 250px; */
     height: 250px;
+    
+}
+.rectBig {
+    /* width: 250px; */
+    height: 500px;
+}
+
+.container3{
+    background-color: darkgray;
+    height: 500px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+
+}
+
+.rect2 {
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    width: 48%;
+    height: 200px;
+}
+
+.rect3 {
+    flex-wrap: wrap;
+    flex-grow: 2;
+    flex-shrink: 0;
+    width: 48%;
+    height: 100%;
+}
+
+
+
+
+.container4{
+    background-color: darkgray;
+    height: 500px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+
+}
+
+.rect4 {
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 0;
+    width: 50%;
+    height: 200px;
+}
+
+.r11 {
+    background-color: red;
+    
+}
+
+.r22 {
+    background-color: blue;
+    order:1 ;
+}
+
+.r33 {
+    background-color: green;
+    
+}
+
+.fS{
+    font-size: 80px;
 }
