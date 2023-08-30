@@ -31,8 +31,8 @@ a{
     background-color:  rgb(255, 255, 255);
     border: 2px solid teal;
     border-radius: 15px;
-    width: 600px;
-    height: 400px;
+    width: 800px;
+    height: 600px;
     transition: 50ms linear;
     position: relative;
     background-image: url(./assets/fundo6.jpg);
@@ -53,23 +53,16 @@ a{
     margin-top: 0px;
 }
 
-.contentDown{
-   
-    margin-top:20%;
-  
 
-}
 
-.contentDownRes{
-    /* margin-top: 52%; */
-}
+
 
 .btn {
     /* border: 2px solid teal; */
     margin: 20px;
     border-radius: 15px;
-    font-size: 30px;
-    padding: 25px;
+    font-size: 35px;
+    padding: 20px;
     /* background-color: black; */
     /* color: white; */
     transition: 50ms linear;
@@ -105,10 +98,12 @@ a{
     
 }
 
-.btnSortear{
-    margin: 10px;
+
+.btnSortearBig{
+    margin: 5px;
     padding: 5px 10px;
-    font-size: 30px;
+    font-size: 35px;
+    background-color: #ffffff9c;
 }
 
 
@@ -118,12 +113,44 @@ a{
     /* color: white; */
     padding: 5px;
     width: 200px;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     margin: 0;
 }
 
 
+.box2 {
+    
+    background-color:  rgb(255, 255, 255);
+    border: 2px solid teal;
+    border-radius: 15px;
+    width: 800px;
+    height: 400px;
+    transition: 50ms linear;
+    margin-top: 50px;
 
+    background-color: lightcyan;
+    background-size: cover;
+    box-sizing: content-box;
+    
+    
+}
 
+.box2:hover{
+    transform: scale(1.03);
+    transition: 50ms linear;
+    box-shadow: 5px 5px 10px teal;
+    
+    
+    
+}
+
+#lista{
+    font-size: 23px;
+    color: rgba(255, 0, 0, 0.541);
+    text-transform: uppercase;
+    
+   
+
+}
 
