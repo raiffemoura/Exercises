@@ -1,9 +1,8 @@
-let url =
-  "http://api.exchangeratesapi.io/v1/latest?access_key=7476da86ad6eeb49ef3186f3a64fd0d9&base=USD&symbols=BRL";
+let url = "http://economia.awesomeapi.com.br/json/last/USD-BRL";
 
 function converter() {
-  let input = document.getElementById("valor");
-  let valor = input.value;
+  var input = document.getElementById("valor");
+  var valor = input.value;
   console.log(valor);
 
   fetch(url)
@@ -12,9 +11,17 @@ function converter() {
     })
     .then((data) => {
       console.log(data);
-      let rate = data.rates.BRL;
-
-      let resultado = `${valor} dolares = ${rate * valor} em reais.`;
-      document.getElementById("resultado").innerHTML = resultado;
+      let rate = data.USDBRL.bid * valor;
+      // console.log(rate);
+      document.getElementById(
+        "resultado"
+      ).innerHTML = `${valor} dolares é igual a R$${rate.toFixed(2)}`;
     });
+  // .then((data) => {
+  //   console.log(data);
+  //   let rate = data.rates.BRL;
+
+  //   let resultado = `${valor} dolares = ${rate * valor} em reais.`;
+  //   document.getElementById("resultado").innerHTML = resultado;
+  // });
 }
