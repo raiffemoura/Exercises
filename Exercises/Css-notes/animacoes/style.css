@@ -1,0 +1,35 @@
+@keyframes changeColor {
+    from{background-color: blue;}
+    to {background-color: brown;}
+}
+
+
+.box{
+    width: 300px;
+    height: 300px;
+    border-style: solid;
+    animation-name: changeColor;
+    animation-duration: 3s;
+}
+
+
+@keyframes changeColors {
+    0%{
+        background-color: blue;
+    }
+    50%{
+        background-color: green;
+    }
+    100%{
+        background-color: brown;
+    }
+}
+.box2{
+    width: 300px;
+    height: 300px;
+    border-style: solid;
+    animation-name: changeColors;
+    animation-duration: 6s;
+}
+
+
