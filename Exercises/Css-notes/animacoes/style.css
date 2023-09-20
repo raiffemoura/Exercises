@@ -1,35 +1,113 @@
 @keyframes changeColor {
-    from{background-color: blue;}
-    to {background-color: brown;}
+    from{background-color: rgb(16, 43, 65); }
+    to {background-color: rgb(122, 230, 122); }
 }
 
 
 .box{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     border-style: solid;
     animation-name: changeColor;
     animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+
 }
 
 
 @keyframes changeColors {
     0%{
-        background-color: blue;
+        background-color: BLUE; width: 300px;
     }
     50%{
-        background-color: green;
+        background-color: yellow; width:400px;
     }
     100%{
-        background-color: brown;
+        background-color: grey;width:200px; 
     }
 }
 .box2{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     border-style: solid;
     animation-name: changeColors;
-    animation-duration: 6s;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes move {
+    0%{ background-color: purple; left: 0px;}
+    50% {background-color: yellow;left: 300px ;}
+    100%{background-color: pink;left: 0px;}
+    
+}
+
+
+@keyframes changeColors2 {
+    0%{
+        width: 200px; background-color: pink;
+    }
+    50%{
+        width:400px; background-color: purple
+    }
+    100%{
+        width:200px;  background-color: pink
+    }
+}
+.box3{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+    /* animation-name: move;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite; */
+
+    animation: move 3s   infinite  both;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.bigbox{
+    
+    width: 100%;
+    height: 100%;
+    border: 1px solid blue;
+}
+
+.box4{
+    width: 120px;
+    height: 120px;
+    border-style: solid;
+    animation-name: changeColors2;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+
+.div1{
+ animation-timing-function: linear;
+}
+.div2{
+    animation-timing-function: ease;
+}
+.div3{
+    animation-timing-function: ease-in;
+}
+.div4{
+    animation-timing-function: ease-OUT;
+}
+.div5{
+    animation-timing-function: ease-in-out;
 }
 
 
