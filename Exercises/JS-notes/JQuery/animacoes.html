@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery Animações</title>
+    <style>
+        .square {
+            width: 500px;
+            height: 500px;
+            background-color: red;
+            position: absolute;
+        }
+
+        #tiririca {
+            width: 500px;
+            height: 500px;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <button id="button3">Fade out</button>
+    <button id="button2">Fade in</button> -->
+    <button id="button">Slide Down</button><br><br>
+    <div id="tiririca"><img src="./tiririca.jpg" alt="tiririca" width="500px"></div>
+    <div class="square">
+
+    </div><br>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+
+    </script>
+    <script>
+
+
+        // $("#button3").click(() => {
+        //     $("#square").fadeOut()
+        // })
+        // $("#button2").click(() => {
+        //     $("#square").fadeIn(4000)
+        // })
+
+        // $("#button").click(() => {
+        //     $("#square").fadeToggle()
+        // })
+
+
+        $("#button").click(() => {
+            $(".square").slideToggle()
+        })
+
+        // $("#button").click(() => {
+        //     $(".square").animate({ height: 200 })
+        // })
+
+    </script>
+</body>
+
+</html>

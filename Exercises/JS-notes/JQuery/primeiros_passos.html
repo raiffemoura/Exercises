@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+</head>
+
+<body>
+    <h1>Primeiro titulo H1</h1>
+    <h1 class="sair" style="display: none; font-size: 80px;">Não Saia Agora</h1>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js">
+
+    </script>
+    <script>
+        // $(".sair").hide()
+        // $("h1").hide()
+        // $.noConflict()
+        $(document).mouseleave(() => {
+            $(".sair").show()
+        })
+
+
+
+
+    </script>
+</body>
+
+</html>
