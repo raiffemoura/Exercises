@@ -8,11 +8,53 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
     <title>Bootstrap Navbar</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .logo {
+            width: 2.5rem;
+        }
+
+        .logo:hover {
+            transform: scale(1.1) rotate(-5deg);
+
+        }
+
+        .bg-nav {
+            background-color: #712cf9 !important;
+        }
+    </style>
 </head>
 
 <body>
 
+    <nav class="bg-nav navbar navbar-expand-sm navbar-dark bg-dark ps-2">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./bt-logo.png" class="logo" alt="" srcset="">
+            </a>
 
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div id="navbarNav" class="navbar-collapse collapse">
+                <ul class="navbar-nav nav-pills ">
+                    <li class="nav-item "><a class="nav-link" href="#">Docs</a></li>
+                    <li class="nav-item "><a class="nav-link" href="#">Examples</a></li>
+                    <li class="nav-item "><a class="nav-link active" href="#">Icons</a></li>
+                    <li class="nav-item "><a class="nav-link" href="#">Themes</a></li>
+                    <li class="nav-item "><a class="nav-link disabled" href="#">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
 
 
 
