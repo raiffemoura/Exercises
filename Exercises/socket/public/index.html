@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket</title>
+</head>
+
+<body>
+    <h1>Socket</h1>
+    <!-- <div id="list"></div> -->
+    <div id="main"></div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script>
+
+        const socket = io("http://localhost:3000")
+
+        socket.on("hello", (data) => {
+            console.log(data.msg);
+
+        })
+
+
+        // setInterval(() => {
+        //     fetch("/list")
+        //         .then(res => res.json())
+        //         .then(data => {
+        //             let list = "<ul>"
+        //             data.map(item => {
+        //                 list += `<li>${item}</li>`
+        //             })
+        //             list += "</ul>"
+        //             document.querySelector("#list").innerHTML = list
+        //         })
+        // }, 1000)
+    </script>
+</body>
+
+</html>
